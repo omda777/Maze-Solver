@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons8-maze-48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/Style.css">
+    <title>MAZE SOLVER</title>
+</head>
+<body>
+    <div id="main-app">
+        <div class="left-form">
+            <h1>MAZE SOLVER</h1>
+            <div class ="controls">
+                <!-- Algorithm -->
+                <div class ="algo-form">
+                    <label for="algorithm">Algorithm :</label>
+                    <select name="algorithm" id="algorithm">
+                        <option value="BFS">Breadth-First Search (BFS)</option>
+                        <option value="DFS">Depth-First Search (DFS)</option>
+                        <option value="dijkstra">Dijkstra’s Algorithm</option>
+                        <option value="astar">A* (A-star) Algorithm</option>
+                    </select>
+                </div>
+
+                <div class="cell-form">
+                    <form action="">
+                        <div class ="size-cell">
+                            <label for="size-cell">Cell Size:</label>
+                            <input type="number" name="cell-per-row" id="size-cell" min = '5' max = '30' value='15' >
+                        </div>
+                        <div class="start-end-div">
+                            <div class="start-control">
+                            <img src="assets/start_node.png" alt="Start Node">
+                            <p>Start Node</p>
+                        </div>
+                        <div class="end-control">
+                            <img src="assets/end_node.png" alt="End Node">
+                            <p>End Node</p>
+                        </div>
+                        </div>
+                        <div class="wall-control">
+                            <img src="assets/firewall.png" alt="Wall">
+                            <p>Wall Node</p>
+                        </div>
+                        <div class="generate-control">
+                            <img src="assets/magic-wand.png" alt="generate">
+                            <p>Generate Maze</p>
+                        </div>
+
+                        <div class="speed-control">
+                        <label for="speed">Speed</label>
+                        <input type="range" id ="speed" min ='5' max ='100' step ='5' value="70">
+                        </div>
+
+                        <div class="solve">
+                            <img src="assets/find.png" alt="solve">
+                            <p>Solve</p>
+                        </div>
+                        <div class ="reset">
+                            <img src="assets/undo.png" alt="reset">
+                            <p>Reset</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="link-form">
+                    <a href="https://github.com/omda777/Maze-Solver">
+                        <img src="assets/github.png" alt="github">
+                        <p>Source code</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class ="grid-cont"></div>
+    </div>
+    <footer class="footer">
+  <p>
+    Created by : <a href="https://www.linkedin.com/in/omda7" target="_blank" class ="Abdelrahman-link"> <strong>Abdelrahman Emad</strong> </a> |
+    <a href="https://www.linkedin.com/in/omda7" target="_blank">
+      <img src="assets/icons8-linkedin-50.png" alt="LinkedIn" class="linkedin-icon">
+    </a>
+    <a href="https://x.com/_Omda7" target="_blank">
+      <img src="assets/icons8-x-24.png" alt="Twitter" class="Twitter-icon">
+    </a>
+  </p>
+</footer>
+    <script type="module" src="src/main.js"></script>
+    
+
+</body>
+</html>
