@@ -1,16 +1,15 @@
 # Maze Solver
 
 An interactive web-based maze solver and pathfinding visualization tool.
+
 Visualize BFS, DFS, Dijkstra, and A* in real time — with smooth animations, adjustable speed, and full control over maze creation.
 
 🔗 Live Demo: [@Link](https://omda777.github.io/Maze-Solver/)
 ## Demo
-
 ### Maze Generation
-<video src="assets/generation_video.mp4" controls width="600"></video>
-
+![Maze Generation](assets/generation.gif)
 ### Pathfinding Visualization
-<video src="assets/solve_video.mp4" controls width="600"></video>
+![Pathfinding Solver](assets/solve.gif)
 
 ## Features
 
