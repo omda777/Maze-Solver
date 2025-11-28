@@ -19,8 +19,11 @@ body {
     display: flex;
     gap: 50px;
     width: 100%;
+    max-width: 1200px; 
     margin-top: 30px;
     margin-bottom: 50px;
+    margin-left: auto;  
+    margin-right: auto; 
     flex: 1;
 }
 
@@ -31,7 +34,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 25px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 .left-form h1 {
@@ -152,6 +155,7 @@ img {
 
 input[type="range"] {
     width: 100%;
+    accent-color: #1883f6;
 }
 
 .solve {
@@ -282,4 +286,42 @@ input[type="range"] {
   transform: scale(1.05);
   z-index: 5;
 }
+
+/* media */
+
+@media(max-width: 1280px )
+{
+    #main-app {
+    gap: 20px;
+}
+    .left-form
+    {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:1180px) {
+    
+    #main-app {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .left-form {
+        width: 90%;
+    }
+
+    .grid-cont {
+        width: 95%;
+        max-width: 700px;
+        height: auto;
+        grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
+    }
+
+    .cell {
+        aspect-ratio: 1 / 1; 
+    }
+}
+
 
