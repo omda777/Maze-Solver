@@ -79,11 +79,15 @@ function resetVisualization() {
 
 function isVisualizationColor(color) {
   if (!color) return false;
+
   const lowerColor = color.toLowerCase().trim();
-  if (lowerColor === visulColor.toLowerCase().trim() || lowerColor.includes(visulColor)) return true;
-  if ( lowerColor === pathColor.toLowerCase().trim() || lowerColor.includes(pathColor))  return true;
-  
-  return false;
+  const visul = visulColor.toLowerCase().trim();
+  const path = pathColor.toLowerCase().trim();
+
+  return (
+    lowerColor === visul || lowerColor.includes(visul) ||
+    lowerColor === path ||lowerColor.includes(path)
+  );
 }
 
 function hasVisualizationColors() {
