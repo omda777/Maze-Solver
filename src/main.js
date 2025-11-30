@@ -80,8 +80,8 @@ function resetVisualization() {
 function isVisualizationColor(color) {
   if (!color) return false;
   const lowerColor = color.toLowerCase().trim();
-  if (lowerColor === visulColor || lowerColor.includes(visulColor)) return true;
-  if ( lowerColor === pathColor || lowerColor.includes(pathColor))  return true;
+  if (lowerColor === visulColor.toLowerCase().trim() || lowerColor.includes(visulColor)) return true;
+  if ( lowerColor === pathColor.toLowerCase().trim() || lowerColor.includes(pathColor))  return true;
   
   return false;
 }
