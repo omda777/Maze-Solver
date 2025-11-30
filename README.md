@@ -7,6 +7,7 @@ Visualize BFS, DFS, Dijkstra, and A* in real time — with smooth animations, ad
 🔗 Live Demo: [@Link](https://omda777.github.io/Maze-Solver/)
 ## Demo
 ### Maze Generation
+### Use Recursive backtracking with Randomized directions
 ![Maze Generation](assets/generation.gif)
 ### Pathfinding Visualization
 ![Pathfinding Solver](assets/solve.gif)
